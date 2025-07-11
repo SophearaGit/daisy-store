@@ -16,6 +16,12 @@ class UserSeeder extends Seeder
         User::insert(
             [
                 [
+                    'name' => 'thea',
+                    'email' => 'thea@gmail.com',
+                    'password' => bcrypt('12345678'),
+                    'role' => 'seller',
+                ],
+                [
                     'name' => 'seller',
                     'email' => 'seller@gmail.com',
                     'password' => bcrypt('12345678'),
